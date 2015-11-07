@@ -7,4 +7,5 @@ makepkg -i
 
 ##For Any Distro
 chmod +x install.sh
+
 ./install.sh
