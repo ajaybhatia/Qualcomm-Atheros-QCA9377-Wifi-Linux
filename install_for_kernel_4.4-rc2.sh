@@ -1,6 +1,6 @@
 #! /bin/bash
 #
-#  install.sh
+#  install_for_kernel_4.4-rc2.sh
 #
 #  Copyright 2015 Ajay Bhatia <prof.ajaybhatia@gmail.com>
 #
@@ -24,13 +24,5 @@
 #  on any GNU\Linux Distribution
 # 
 
-echo "options ath10k_core skip_otp=y" | sudo tee /etc/modprobe.d/ath10k_core.conf
-tar -xvf qca9377.tar.xz
-cd qca9377
-make defconfig-ath10k
-make -j9
-sudo make install
-sudo cp -r ath10k-firmware/ath10k/ /lib/firmware/
-sudo cp -r ath10k-firmware/QCA9377 /lib/firmware/ath10k/
-sudo mv /lib/firmware/ath10k/QCA9377/hw1.0/firmware-5.bin_WLAN.TF.1.0-00267-1 /lib/firmware/ath10k/QCA9377/hw1.0/firmware-5.bin
+sudo cp -r firmware-only/QCA9377 /lib/firmware/ath10k/
 sudo reboot

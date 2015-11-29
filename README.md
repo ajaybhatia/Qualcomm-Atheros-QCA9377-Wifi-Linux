@@ -9,3 +9,11 @@ makepkg -i
 chmod +x install.sh
 
 ./install.sh
+
+###For Kernel 4.4-rc2
+Compile your own kernel by applying qca9377_hw1.1_for_linux_4.4-rc2.patch to the kernel source code.
+
+Use distribution specific kernel compilation steps (Read it more about it on your distribution wiki pages).
+
+chmod +x install_for_kernel_4.4-rc2.sh
+./install_for_kernel_4.4-rc2.sh 
