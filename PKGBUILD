@@ -10,7 +10,7 @@ arch=('any')
 license=('GPL')
 source=("qca9377.tar.xz"
 		    "ath10k.conf")
-md5sums=('cb8023f987bdc485c3b4bf1be31b8ceb'
+md5sums=('756934dba6b59e2ee19922b63b8a97bb'
          'fce5dbe873ca616de7d519cb55af8e68')
 
 
