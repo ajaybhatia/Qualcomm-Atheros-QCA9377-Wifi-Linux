@@ -2,6 +2,8 @@
 Drivers and Firmware for Qualcomm Atheros QCA9377 Driver 0042 [rev. 30]. 
 This repo also contains PKGBUILD for Arch Distribution and a generic bash script for any GNU\Linux distro.
 
+***This repo is depreciated and not under maintenance. Developers are welcome to maintain this repo***
+
 ##For Arch Linux Distro
 makepkg -i
 
