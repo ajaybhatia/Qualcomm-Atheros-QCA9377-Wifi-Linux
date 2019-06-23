@@ -31,4 +31,12 @@ cd qca9377
 make defconfig-ath10k
 make -j9
 sudo make install
-sudo reboot
+
+# reboot prompt if stdout is a terminal
+if [ -t 1 ] ; then
+    read -p 'Reboot? [y]/n' $reboot
+    if ([ "$reboot" = "y" ] || [ -z "$reboot" ]); then
+        sudo reboot
+    fi
+fi
+echo "please reboot to complete installation"
